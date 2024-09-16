@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background-image {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    background-image: url('stone-texture-background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 1; 
+}
+
+.navbar {
+    position: relative;
+    z-index: 2;
+}
+
+.nav-top {
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 1rem;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.tools{
+    margin: 3px;
+}
+
+.icon-two{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+}
+.side-bar {
+    background: rgba(255, 255, 255, 0.8);
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 1rem;
+    border: none;
+    text-align: left;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-item:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.icon-side{
+    align-items: center;
+    justify-content: left;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(5, 0, 0, 0.5); 
+    opacity: 0.2;
+    z-index: 1; 
+}
+
